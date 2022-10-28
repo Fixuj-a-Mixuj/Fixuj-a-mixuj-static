@@ -227,6 +227,8 @@ nav {
         flex-direction: column;
         z-index: 101;
     }
+
+    .velke-logo {}
 }
 
 .nav {
