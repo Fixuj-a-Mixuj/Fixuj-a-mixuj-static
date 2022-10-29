@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Faster+One&family=Fredoka+One&family=Fredoka:wght@300;400;500;600;700&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.desktop-nav .logo {
+    height: 55px;
+    padding: 10px;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+/*menu ikonka*/
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(163, 173, 185, 0);
+    cursor: pointer;
+    transition: background-color 500ms ease-in-out;
+}
+
+
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:active {
+    background-color: rgba(87, 84, 255, 0.8);
+}
+
+.menu-icon {
+    position: relative;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.menu-icon span {
+    position: absolute;
+    height: 0.125rem;
+    width: 100%;
+    background-color: #332F21;
+    transition: background-color 500ms ease-in-out;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0.0625rem;
+}
+
+.menu-icon span:nth-child(2) {
+    top: 0.625rem;
+}
+
+.menu-icon span:nth-child(3) {
+    top: 1.25rem;
+}
+
+.menu-button:hover span,
+.menu-button:focus span,
+.menu-button:active span {
+    background: white;
+}
+
+/*delani z menu krizek*/
+.menu-icon.is-active span:nth-child(1) {
+    opacity: 0;
+}
+
+.menu-icon.is-active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu-icon.is-active span:nth-child(3) {
+    top: 0.625rem;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+/* Fullscreen Menu */
+
+/*leva cast menu*/
+.fullscreen-menu-container-l {
+    position: fixed;
+    top: -40rem;
+    left: 0;
+    z-index: 5;
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(160deg, #6C6AFF, #A057FF, #9A6BFF);
+    filter: opacity(0.95);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: top 700ms ease-in, opacity 400ms ease-in;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-shadow: 15px 0px 30px 0px rgb(0, 0, 0, 25%);
+    border-radius: 0 2vw 2vw 0;
+}
+
+.fullscreen-menu-container-l.is-open {
+    opacity: 1;
+    top: 0;
+    pointer-events: auto;
+}
+
+
+
+/*prava cast menu*/
+.fullscreen-menu-container-r {
+    position: fixed;
+    top: 40rem;
+    right: 0;
+    z-index: 5;
+    width: 40%;
+    height: 100vh;
+    background: white;
+    filter: opacity(0.95);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: top 700ms ease-in, opacity 400ms ease-in;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+}
+
+.fullscreen-menu-container-r.is-open {
+    opacity: 1;
+    top: 0;
+    pointer-events: auto;
+}
+
+.fullscreen-menu-container-r .menu-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+/*velkem fixuj a mixuj menu nadpis*/
+.menu-nadpis {
+    font-family: "Fredoka";
+    font-weight: 300;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
+    margin: 0;
+    padding: 1vw 2vw;
+}
+
+
+/*odkazy*/
+.fullscreen-menu__nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-top: 3vw;
+}
+
+.fullscreen-menu__nav li {
+    padding: 2vw;
+}
+
+.fullscreen-menu__nav a {
+    color: white;
+    font-family: "Kumbh Sans";
+    text-decoration: none;
+    font-size: 6.5vw;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 300ms ease-in;
+}
+
+.fullscreen-menu__nav a:hover,
+.fullscreen-menu__nav a:focus,
+.fullscreen-menu__nav a:active {
+    color: #3e4247;
+}
+
+
+
+/*koktejl mesice*/
+.obdelnik {
+    margin: auto;
+    width: 36vw;
+    height: 43vw;
+    background-color: #F3F3F3;
+    border-radius: 4.5vw;
+    box-shadow: 0px 0px 90px 30px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/*koktejl*/
+.mesicni-img {
+    margin: auto;
+    margin-top: -7vw;
+    height: 30vw;
+    margin-bottom: 1.3vw;
+}
+
+/*div za nadpisem koktejl mesice*/
+.koktejl-mesice {
+    background: linear-gradient(270deg, rgba(87, 84, 255, 0.7) 20.54%, rgba(140, 86, 255, 0.7) 79.25%);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    margin: 0px -2vw;
+    filter: blur(-3px);
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+}
+
+/*nadpis koktejl mesice*/
+.koktejl-mesice h3 {
+    color: white;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 2.3vw;
+    margin: auto;
+    padding: 1vw 0px;
+}
+
+/*nazev koktejlu*/
+.mesicni-nazev {
+    margin: auto;
+    padding: 0;
+}
+
+.mesicni-nazev h2 {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 4vw;
+    color: black;
+    margin: auto;
+    padding: 0;
+    letter-spacing: 0;
+}
+
+/* tlacitko zobrazit */
+.button {
+    background: linear-gradient(93.15deg, rgba(87, 84, 255, 0.7) 5.84%, rgba(140, 86, 255, 0.7) 100%);
+    text-align: center;
+    color: white;
+    margin: 0px 10.5vw 2vw 10.5vw;
+    padding: 0.5vw 1vw;
+    border-radius: 2.3vw;
+    font-size: 2vw;
+    font-family: "Lexend Deca";
+    box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+@media only screen and (max-width: 600px) {}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style-navbar.css">
     <title>Fixuj &amp; Mixuj</title>
 </head>
 
@@ -14,65 +15,52 @@
         <img class="velke-logo" src="images/logo-bila.png">
         <h2 class="refresher">FIXUJ &amp; MIXUJ</h2>
     </div>
-    <nav>
-        <a><img class="logo-img" src="images/logo.png"></a>
-        <input type="checkbox" id="btnControl" />
-        <label class="btn" for="btnControl">
-            <div class="wrapper">
-                <div class="navbar">
-                    <div class="first"></div>
-                    <div class="second"></div>
-                    <div class="third"></div>
-                </div>
+
+
+    <nav class="desktop-nav">
+        <a>
+            <img src="images/logo.png" class="logo">
+        </a>
+
+        <a class="menu-button js-menu-button">
+            <div class="menu-icon">
+                <span></span><span></span><span></span>
             </div>
-            <div class="nav">
-                <div class="navigator-l">
-                    <h2>FIXUJ &amp; MIXUJ</h2>
-                    <div class="odkazy">
-                        <a class="Domů" href="#">Domů</a>
-                        <a class="Koktejly" href="#">Koktejly</a>
-                        <a class="Slovníček" href="#">Slovníček</a>
-                        <a class="O nás" href="#">O nás</a>
-                    </div>
-                </div>
-                <div class="navigator-r">
-                    <div class="obdelnik">
-                        <img class="mesicni-img" src="images/koktejl.png">
-                        <div class="mesice">
-                            <h3>KOKTEJL MĚSÍCE</h3>
-                        </div>
-                        <div class="nazev">
-                            <h2>Tequila Sunrise</h2>
-                        </div>
-                        <div class="button">ZOBRAZIT</div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-exit">
-                <div class="navigator-l-exit">
-                    <h2>FIXUJ &amp; MIXUJ</h2>
-                    <div class="odkazy">
-                        <a class="Domů" href="#">Domů</a>
-                        <a class="Koktejly" href="#">Koktejly</a>
-                        <a class="Slovníček" href="#">Slovníček</a>
-                        <a class="O nás" href="#">O nás</a>
-                    </div>
-                </div>
-                <div class="navigator-r-exit">
-                    <div class="obdelnik">
-                        <img class="mesicni-img" src="images/koktejl.png">
-                        <div class="mesice">
-                            <h3>KOKTEJL MĚSÍCE</h3>
-                        </div>
-                        <div class="nazev">
-                            <h2>Tequila Sunrise</h2>
-                        </div>
-                        <div class="button">ZOBRAZIT</div>
-                    </div>
-                </div>
-            </div>
-        </label>
+        </a>
     </nav>
+
+
+    <div class="fullscreen-menu-container-l js-menu-container-l">
+        <h2 class="menu-nadpis">Fixuj &amp; Mixuj</h2>
+
+        <nav class="fullscreen-menu__nav">
+            <ul>
+                <li><a href="#">Koktejly</a></li>
+                <li><a href="#">Slovníček</a></li>
+                <li><a href="#">Pobočky</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="fullscreen-menu-container-r js-menu-container-r">
+        <a class="menu-button js-menu-close">
+            <div class="menu-icon is-active">
+                <span></span><span></span><span></span>
+            </div>
+        </a>
+        <div class="obdelnik">
+            <img class="mesicni-img" src="images/koktejl.png">
+            <div class="koktejl-mesice">
+                <h3>KOKTEJL MĚSÍCE</h3>
+            </div>
+            <div class="mesicni-nazev">
+                <h2>Tequila Sunrise</h2>
+            </div>
+            <div class="button">ZOBRAZIT</div>
+        </div>
+    </div>
+
+
     <div class="nazev">
         <h1>Fixuj &amp; Mixuj</h1>
         <img class="koktejl" src="images/koktejl.png">
@@ -87,7 +75,7 @@
                 <a><img class="icona" src="images/ikonky/-m%20MANHATTAN.png"></a>
             </div>
             <div class="your-element" data-tilt>
-                <a><img class="icona" src="images/ikonky/-w%20APEROL%20SPRITZ.png"></a>
+                <a><img class="icona" src="images/ikonky/-r%20%C5%A0TR%C3%9ADL.png"></a>
             </div>
         </div>
     </div>
@@ -95,7 +83,7 @@
         <h2 class="nadpis-index">NEJNOVEJŠÍ ZE SBÍRKY</h2>
         <div class="ikony-nejnovejsich">
             <div class="card">
-                <img class="icona" src="images/ikonky/-r%20%C5%A0TR%C3%9ADL.png">
+                <img class="icona" src="images/ikonky/-z%20MYSTERY%20COCKTAIL.png">
             </div>
             <div class="card">
                 <img class="icona" src="images/ikonky/-s%20SEMAFOR.png">
@@ -113,4 +101,6 @@
 
     </div>
     <script type="text/javascript" src="styles/vanilla-tilt.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="styles/script.js"></script>
 </body></html>
