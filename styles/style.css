@@ -165,3 +165,20 @@ body {
         opacity: 0
     }
 }
+
+.oblibene-napoje {
+    background: rgba(202, 202, 202, 0.09);
+    box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    border-radius: 3.25vw;
+    margin: 2vw;
+    padding-top: 0.1vw;
+}
+
+.vlna {
+    margin-top: 6.5vw;
+    background: url(../images/Vector%202.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}

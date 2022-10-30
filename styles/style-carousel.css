@@ -1,0 +1,133 @@
+input[type=radio] {
+    display: none;
+}
+
+.karta-oblibene {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.container-oblibene {
+    padding-bottom: 4vw;
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oblibene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.karta-oblibenes {
+    margin-bottom: 38vw;
+}
+
+.rada {
+    display: flex;
+}
+
+.container-oblibene img {
+    margin: 0.5vw;
+    width: 13.3vw;
+    border-radius: 1vw;
+    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 25%);
+
+}
+
+#item-1:checked ~ .karta-oblibenes #song-3,
+#item-2:checked ~ .karta-oblibenes #song-1,
+#item-3:checked ~ .karta-oblibenes #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .karta-oblibenes #song-2,
+#item-2:checked ~ .karta-oblibenes #song-3,
+#item-3:checked ~ .karta-oblibenes #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .karta-oblibenes #song-1,
+#item-2:checked ~ .karta-oblibenes #song-2,
+#item-3:checked ~ .karta-oblibenes #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.player {
+    background: white;
+    border-radius: 2vw;
+    min-width: 20vw;
+    padding: 1.2vw 0.7vw 0.7vw 0.7vw;
+    text-align: center;
+    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 25%);
+
+}
+
+.upper-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 2.3vw;
+    overflow: hidden;
+}
+
+.song-info {
+    display: block;
+}
+
+.song-info .title-oblibene {
+    animation: animateBg 10s linear infinite;
+    background-image: linear-gradient(160deg, #6C6AFF, #A057FF, #9A6BFF, #A057FF, #6C6AFF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.8vw;
+    line-height: 1.5vw;
+    font-family: Fredoka;
+}
+
+.sub-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.subtitle-oblibene {
+    font-size: 12px;
+    line-height: 0.9vw;
+    color: #c6c5c6;
+}
+
+.info-area {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: transform .4s ease-in;
+}
+
+#item-2:checked ~ .player #test {
+    transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+    transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+    transform: translateY(-80px);
+}
