@@ -181,11 +181,12 @@ body {
 
 
 .oblibene-container-background {
-    margin-top: 6.5vw;
+    padding-top: 6.5vw;
+    padding-bottom: 2vw;
     background: url(../images/Vector%202.svg);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 85%;
+    background-position: 90% 90%;
+    background-size: 153%;
 }
 
 .oblibene-container-glass-container {
@@ -306,4 +307,29 @@ body {
     font-weight: 300;
     font-size: 2.5vw;
     color: white;
+}
+
+video {
+    height: 40vw;
+    margin-top: 5vw;
+    border-radius: 20px;
+}
+
+.koktejl__images-wave-background {
+    height: 60vw;
+    margin-top: -18vw;
+    padding-bottom: 6vw;
+    background: url(../images/Vector%203.svg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.koktejl__images-wave-background img {
+    height: 25vw;
+    border-radius: 40px;
+    margin: auto;
+    margin-top: 22vw;
 }
