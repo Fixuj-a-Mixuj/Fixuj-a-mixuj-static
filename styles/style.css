@@ -5,133 +5,6 @@ body {
     padding: none;
 }
 
-/*Fixuj a mixuj nadpis*/
-.nazev {
-    padding: 0;
-    margin: auto;
-    display: flex;
-}
-
-.nazev h1 {
-    margin: auto;
-    font-family: "Expletus Sans";
-    font-size: 17vw;
-    padding: 0;
-    margin-left: 6vw;
-}
-
-/*hlavni koktejl*/
-.koktejl {
-    transform: rotate(20deg);
-    height: 40vw;
-    margin: auto;
-    padding: 0;
-    margin-right: 9vw;
-}
-
-/*ikonky*/
-.icona {
-    width: 20vw;
-    border-radius: 2.3vw;
-    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 25%);
-
-}
-
-.favoriti .icona {
-    width: 18vw;
-    border-radius: 2.3vw;
-    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 25%);
-
-}
-
-/*favoriti*/
-.favoriti {
-    margin: 9vw 8vw 0 8vw;
-    padding: 3.5vw 2.3vw;
-    border-radius: 3.5vw;
-    animation: animateBg 10s linear infinite;
-    background-image: linear-gradient(160deg, #6C6AFF, #A057FF, #9A6BFF, #A057FF, #6C6AFF);
-    background-size: 100% 1100%;
-    box-shadow: 0px 0px 30px 15px rgb(0, 0, 0, 25%);
-
-}
-
-.ikony-favoritu {
-    display: flex;
-    justify-content: space-around;
-}
-
-.favoriti h2 {
-    font-family: "Faster One";
-    color: white;
-    font-size: 3vw;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 2.3vw;
-    letter-spacing: 1.25vw;
-    font-weight: 100;
-}
-
-/*nadpisy kategorii*/
-.nadpis-index {
-    font-family: "Fredoka";
-    animation: animateBg 10s linear infinite;
-    background-image: linear-gradient(160deg, #6C6AFF, #A057FF, #9A6BFF, #A057FF, #6C6AFF);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 4vw;
-    text-align: center;
-    font-weight: 400;
-}
-
-
-@keyframes animateBg {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 0% 100%;
-    }
-}
-
-/*nejnovejsich*/
-.ikony-nejnovejsich {
-    display: flex;
-    justify-content: center;
-    margin-left: -3vw;
-}
-
-.nejnovejsi {
-    left: calc(50% - 12.6vw);
-
-}
-
-.card {
-    background-color: none;
-    width: 16.5vw;
-    transition: 0.2s ease-out;
-    position: relative;
-    left: 0px;
-}
-
-.card .icona {
-    box-shadow: 0px 0px 30px 10px rgb(0, 0, 0, 25%);
-
-}
-
-.card:hover {
-    transform: translateY(-1.3vw);
-    transition: 0.2s ease-out;
-}
-
-.card:hover ~ .card {
-    position: relative;
-    left: 3.25vw;
-    transition: 0.2s ease-out;
-}
-
-
 /*refresh screen*/
 .refresh {
     animation: slide-out-bottom .5s cubic-bezier(.55, .085, .68, .53) 1s both;
@@ -153,13 +26,144 @@ body {
     margin-bottom: -150px;
 }
 
-.refresher {
+.refresh-heading {
     margin: auto;
     font-family: Fredoka;
     font-weight: 300;
     font-size: 5vw;
     color: white;
     letter-spacing: 0.75vw;
+}
+
+/*Fixuj a mixuj nadpis*/
+.main-title {
+    padding: 0;
+    margin: auto;
+    display: flex;
+}
+
+.main-title h1 {
+    margin: auto;
+    font-family: "Expletus Sans";
+    font-size: 17vw;
+    padding: 0;
+    margin-left: 6vw;
+}
+
+/*hlavni koktejl*/
+.main-title-koktejl {
+    transform: rotate(20deg);
+    height: 40vw;
+    margin: auto;
+    padding: 0;
+    margin-right: 9vw;
+}
+
+/*ikonky*/
+.icona {
+    width: 20vw;
+    border-radius: 2.3vw;
+    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 25%);
+}
+
+/*favoriti*/
+.favoriti-container {
+    margin: 9vw 8vw 0 8vw;
+    padding: 3.5vw 2.3vw;
+    border-radius: 3.5vw;
+    animation: animateBg 10s linear infinite;
+    background-image: linear-gradient(160deg, #6C6AFF, #A057FF, #9A6BFF, #A057FF, #6C6AFF);
+    background-size: 100% 1100%;
+    box-shadow: 0px 0px 30px 15px rgb(0, 0, 0, 25%);
+
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.favoriti-container h2 {
+    font-family: "Faster One";
+    color: white;
+    font-size: 3vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.3vw;
+    letter-spacing: 1.25vw;
+    font-weight: 100;
+}
+
+.favoriti__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.favoriti-container .icona {
+    width: 18vw;
+    border-radius: 2.3vw;
+    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 25%);
+}
+
+/*nadpisy kategorii*/
+.heading-h2 {
+    font-family: "Fredoka";
+    animation: animateBg 10s linear infinite;
+    background-image: linear-gradient(160deg, #6C6AFF, #A057FF, #9A6BFF, #A057FF, #6C6AFF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+
+@keyframes animateBg {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/*nejnovejsich*/
+.nejnovejsi-container {
+    left: calc(50% - 12.6vw);
+}
+
+.nejnovejsi__list {
+    display: flex;
+    justify-content: center;
+    margin-left: -3vw;
+}
+
+.nejnovejsi__list-container {
+    background-color: none;
+    width: 16.5vw;
+    transition: 0.2s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.nejnovejsi__list-item {
+    width: 18vw;
+    height: 24vw;
+    margin: 0;
+    padding: 1vw;
+    border-radius: 2vw;
+    box-shadow: 15px 15px 30px 0px rgb(0, 0, 0, 50%);
+    background-color: white;
+}
+
+.nejnovejsi__list-container:hover {
+    transform: translateY(-1.3vw);
+    transition: 0.2s ease-out;
+}
+
+.nejnovejsi__list-container:hover ~ .card {
+    position: relative;
+    left: 3.25vw;
+    transition: 0.2s ease-out;
 }
 
 @keyframes slide-out-bottom {
@@ -174,7 +178,17 @@ body {
     }
 }
 
-.oblibene-napoje {
+
+
+.oblibene-container-background {
+    margin-top: 6.5vw;
+    background: url(../images/Vector%202.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 85%;
+}
+
+.oblibene-container-glass-container {
     background: rgba(202, 202, 202, 0.09);
     box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(6px);
@@ -183,10 +197,113 @@ body {
     padding-top: 0.1vw;
 }
 
-.vlna {
-    margin-top: 6.5vw;
-    background: url(../images/Vector%202.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 85%;
+
+.koktejl-title {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 7vw;
+    margin: 0;
+    background: linear-gradient(90.14deg, #6E6BFF 0.97%, #8C4EDF 50.43%, #9266F0 99.88%), #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 2vw 0;
+}
+
+.koktejl-container {
+    margin-left: 4vw;
+}
+
+.koktejl-information {
+    display: flex;
+    gap: 2vw;
+}
+
+.koktejl-priprava {
+    margin-left: 6vw;
+
+}
+
+.koktejl-priprava__item {
+    margin-top: 3vw;
+}
+
+.koktejl-information-difficulty {
+    background: #E9AB0C;
+    box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Lexend deca';
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5vw;
+    padding: 0.5vw 2vw;
+    text-align: center;
+    letter-spacing: 0.15vw;
+    color: #FFFFFF;
+}
+
+.koktejl-information-rating {
+    background: #F5F5F5;
+    box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-family: 'Faster One';
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.135em;
+    color: #E9AB0C;
+}
+
+.heading-detail {
+    margin: auto;
+    margin-left: 3vw;
+    font-family: 'Lexend Deca';
+    font-weight: 300;
+    font-size: 2.5vw;
+    color: #000000;
+    padding-bottom: 2vw;
+}
+
+.koktejl-priprava-p p {
+    margin: auto;
+    margin-left: 5vw;
+    font-family: 'Lexend Deca';
+    font-weight: 200;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+.odsazeni {
+    margin-left: 5vw;
+}
+
+.koktejl-priprava-postup-container {
+    background: linear-gradient(101.03deg, #6C6AFF 3.6%, #A057FF 53.84%, #9A6BFF 94.9%);
+    border-radius: 3vw;
+    padding: 3vw 5vw 2vw 5vw;
+    max-width: 31vw;
+    color: white;
+    font-family: 'Lexend Deca';
+    margin: 0;
+    margin-top: 3vw;
+
+}
+
+.koktejl-priprava-postup-container li {
+    line-height: 4vw;
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin-left: 3vw;
+}
+
+.heading-detail-container {
+    margin: auto;
+    font-weight: 300;
+    font-size: 2.5vw;
+    color: white;
 }

@@ -149,7 +149,7 @@
 
 
 /*velkem fixuj a mixuj menu nadpis*/
-.menu-nadpis {
+.fullscreen-menu-nadpis {
     font-family: "Fredoka";
     font-weight: 300;
     color: white;
@@ -194,7 +194,7 @@
 
 
 /*koktejl mesice*/
-.obdelnik {
+.fullscreen-menu-koktejl-container {
     margin: auto;
     width: 36vw;
     height: 43vw;
@@ -207,15 +207,16 @@
 }
 
 /*koktejl*/
-.mesicni-img {
+.fullscreen-menu-koktejl {
     margin: auto;
     margin-top: -7vw;
-    height: 30vw;
+    height: 28vw;
     margin-bottom: 1.3vw;
+    padding-top: 2vw
 }
 
 /*div za nadpisem koktejl mesice*/
-.koktejl-mesice {
+.fullscreen-menu-koktejl-mesice-container {
     background: linear-gradient(270deg, rgba(87, 84, 255, 0.7) 20.54%, rgba(140, 86, 255, 0.7) 79.25%);
     backdrop-filter: blur(3px);
     text-align: center;
@@ -225,7 +226,7 @@
 }
 
 /*nadpis koktejl mesice*/
-.koktejl-mesice h3 {
+.fullscreen-menu-koktejl-mesice-container h3 {
     color: white;
     font-family: "Lexend Deca";
     font-weight: 400;
@@ -235,12 +236,12 @@
 }
 
 /*nazev koktejlu*/
-.mesicni-nazev {
+.fullscreen-menu-koktejl-mesice-jmeno-koktejlu {
     margin: auto;
     padding: 0;
 }
 
-.mesicni-nazev h2 {
+.fullscreen-menu-koktejl-mesice-jmeno-koktejlu h2 {
     font-family: "Lexend Deca";
     font-weight: 400;
     font-size: 4vw;
@@ -251,7 +252,7 @@
 }
 
 /* tlacitko zobrazit */
-.button {
+.fullscreen-menu-koktejl-mesice-button {
     background: linear-gradient(93.15deg, rgba(87, 84, 255, 0.7) 5.84%, rgba(140, 86, 255, 0.7) 100%);
     text-align: center;
     color: white;
