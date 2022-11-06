@@ -40,6 +40,7 @@ body {
     padding: 0;
     margin: auto;
     display: flex;
+    -webkit-user-select: none;
 }
 
 .main-title h1 {
@@ -315,21 +316,23 @@ video {
     border-radius: 20px;
 }
 
+/*
 .koktejl__images-wave-background {
-    height: 60vw;
     margin-top: -18vw;
-    padding-bottom: 6vw;
     background: url(../images/Vector%203.svg);
     background-repeat: no-repeat;
     background-position: cover;
+
+}
+*/
+.koktejl__images-wave-container {
+    padding: 23rem 0vw 18rem 0vw;
     display: flex;
     justify-content: center;
-
 }
 
 .koktejl__images-wave-background img {
-    height: 25vw;
-    border-radius: 40px;
+    height: 22vw;
+    border-radius: 2vw;
     margin: auto;
-    margin-top: 22vw;
 }
