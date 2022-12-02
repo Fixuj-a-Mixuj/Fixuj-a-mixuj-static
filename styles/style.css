@@ -336,3 +336,10 @@ video {
     border-radius: 2vw;
     margin: auto;
 }
+
+.koktejl-krasnej {
+    position: fixed;
+    right: 1rem;
+    top: 10rem;
+    width: 40%;
+}
