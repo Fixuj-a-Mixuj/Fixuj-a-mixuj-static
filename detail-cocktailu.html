@@ -27,7 +27,7 @@
 
 
         <nav class="desktop-nav">
-            <a href="index.html">
+            <a href="javascript:setTimeout(()=>{window.location = 'index.html' },1000);" id="a">
                 <img src="images/logo.png" class="logo">
             </a>
 
@@ -169,7 +169,6 @@
             // Set the src attribute of the image element to the URL of the current photo
             imageElement.src = photos[currentIndex];
         });
-
     </script>
     <script>
         //CHANGE POSITION ATRIBUTES FOR ROTATING IMAGE SCRIPT
@@ -190,7 +189,6 @@
         // This will run the changeImagePosition function whenever the
         // user scrolls the page
         window.addEventListener('scroll', changeImagePosition);
-
     </script>
     <script>
         //FAST IMAGE LOAD ON PAGE LOAD
@@ -207,14 +205,10 @@
         setTimeout(function() {
             document.getElementById("contentContainer").style.display = "none";
         }, 5000);
-
     </script>
     <script>
-        document.querySelector("kokot").addEventListener("click", function() {
+        document.getElementById('a').addEventListener('click', function() {
             document.getElementById("r--out").style.display = "flex";
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
