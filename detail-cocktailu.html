@@ -15,7 +15,12 @@
 
 <body>
     <header>
-        <div class="refresh">
+        <div class="refresh r--in">
+            <img class="velke-logo" src="images/logo-bila.png">
+            <h2 class="refresh-heading">FIXUJ &amp; MIXUJ</h2>
+        </div>
+
+        <div class="refresh r--out">
             <img class="velke-logo" src="images/logo-bila.png">
             <h2 class="refresh-heading">FIXUJ &amp; MIXUJ</h2>
         </div>
@@ -164,6 +169,7 @@
             // Set the src attribute of the image element to the URL of the current photo
             imageElement.src = photos[currentIndex];
         });
+
     </script>
     <script>
         //CHANGE POSITION ATRIBUTES FOR ROTATING IMAGE SCRIPT
@@ -184,6 +190,7 @@
         // This will run the changeImagePosition function whenever the
         // user scrolls the page
         window.addEventListener('scroll', changeImagePosition);
+
     </script>
     <script>
         //FAST IMAGE LOAD ON PAGE LOAD
@@ -199,6 +206,23 @@
         //TIMEOUT FOR DISPLAY NONE
         setTimeout(function() {
             document.getElementById("contentContainer").style.display = "none";
-        }, 1800);
+        }, 5000);
+
     </script>
-</body></html>
+    <script>
+        document.querySelector('a').addEventListener('click', (e) => {
+                    document.getElementById('--out').style.display = 'block';
+
+    </script>
+    <script>
+        document.querySelector('a').addEventListener('click', function(e) {
+            e.preventDefault();
+            setTimeout(function() {
+                window.location.href = e.target.href;
+            }, 1000);
+        });
+
+    </script>
+</body>
+
+</html>

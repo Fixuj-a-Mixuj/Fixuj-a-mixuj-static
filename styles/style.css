@@ -7,7 +7,6 @@ body {
 
 /*refresh screen*/
 .refresh {
-    animation: slide-out-bottom .5s cubic-bezier(.55, .085, .68, .53) 1s both;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -18,6 +17,15 @@ body {
     top: 0;
     left: 0;
     margin: auto;
+}
+
+.r--in {
+    animation: slide-out-bottom .5s cubic-bezier(.55, .085, .68, .53) 1s both;
+}
+
+.r--out {
+    animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) 1s both;
+    display: none;
 }
 
 .velke-logo {
@@ -179,6 +187,17 @@ body {
     }
 }
 
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
 
 
 .oblibene-container-background {

@@ -16,7 +16,12 @@
 
 <body>
     <header>
-        <div class="refresh">
+        <div class="refresh r--in">
+            <img class="velke-logo" src="images/logo-bila.png">
+            <h2 class="refresh-heading">FIXUJ &amp; MIXUJ</h2>
+        </div>
+
+        <div class="refresh r--out">
             <img class="velke-logo" src="images/logo-bila.png">
             <h2 class="refresh-heading">FIXUJ &amp; MIXUJ</h2>
         </div>
@@ -254,4 +259,16 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="styles/script-menu.js"></script>
     <script src="styles/script-carousel.js"></script>
+    <script>
+        document.querySelector('a').addEventListener('click', (e) => {
+                    document.getElementById('r--out').style.display = 'block';
+    </script>
+    <script>
+        document.querySelector('a').addEventListener('click', function(e) {
+            e.preventDefault();
+            setTimeout(function() {
+                window.location.href = e.target.href;
+            }, 1000);
+        });
+    </script>
 </body></html>
