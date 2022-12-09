@@ -24,7 +24,7 @@ body {
 }
 
 .r--out {
-    animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) 1s both;
+    animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
     display: none;
 }
 
