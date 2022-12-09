@@ -122,12 +122,18 @@
             </div>
         </div>
     </aside>
+    <div id="contentContainer">
+        <img src="images/sekvence_fotek/photo1.png">
+    </div>
 
 
     <script type="text/javascript" src="styles/vanilla-tilt.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="styles/script-menu.js"></script>
     <script>
+        //SCROLL IMAGE ROTATE SCRIPT
+
+
         // Define the photos array with the URLs of the photos to display
         const photos = [];
 
@@ -158,6 +164,9 @@
             // Set the src attribute of the image element to the URL of the current photo
             imageElement.src = photos[currentIndex];
         });
+    </script>
+    <script>
+        //CHANGE POSITION ATRIBUTES FOR ROTATING IMAGE SCRIPT
 
 
         function changeImagePosition() {
@@ -175,8 +184,21 @@
         // This will run the changeImagePosition function whenever the
         // user scrolls the page
         window.addEventListener('scroll', changeImagePosition);
-
     </script>
-</body>
+    <script>
+        //FAST IMAGE LOAD ON PAGE LOAD
 
-</html>
+
+        // Create 50 img elements and add them to the contentContainer
+        for (let i = 1; i < 50; i++) {
+            const photo = document.createElement('img');
+            photo.src = `images/sekvence_fotek/photo${i}.png`;
+            contentContainer.appendChild(photo);
+        }
+
+        //TIMEOUT FOR DISPLAY NONE
+        setTimeout(function() {
+            document.getElementById("contentContainer").style.display = "none";
+        }, 1800);
+    </script>
+</body></html>

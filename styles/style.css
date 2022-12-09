@@ -364,3 +364,9 @@ body::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90.14deg, #6E6BFF 0.97%, #8C4EDF 50.43%, #9266F0 99.88%), #000000;
     -webkit-background-clip: content-box;
 }
+
+#contentContainer {
+    display: block;
+    height: 0px;
+    overflow: hidden;
+}
