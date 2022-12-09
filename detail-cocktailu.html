@@ -112,13 +112,13 @@
     <aside>
         <center>
             <video controls>
-                <source src="images/koktejl.lasky.mp4" type="video/mp4" size="720" />
+                <source src="images/ginovka.mp4" type="video/mp4" size="1080" />
             </video>
         </center>
         <div class="koktejl__images-wave-background">
             <div class="koktejl__images-wave-container">
-                <img src="images/image%201.png" style="transform: rotate(10deg)">
-                <img src="images/image%201.png" style="transform: rotate(-15deg)">
+                <img src="images/gin.JPG" style="transform: rotate(10deg)">
+                <img src="images/ginek.JPG" style="transform: rotate(-15deg)">
             </div>
         </div>
     </aside>
@@ -143,46 +143,37 @@
         // Define the image element to display the photos
         const imageElement = document.getElementById("image");
 
-        // Define a counter to keep track of the number of scrolls
-        let scrollCounter = 0;
+        // listen for the "scroll" event on the window
+        window.addEventListener("scroll", function() {
+            // get the current scroll position
+            const currentScrollPosition = window.scrollY;
 
-        // Define the function to handle the scroll event
-        function handleScroll(event) {
-            // Increment the scroll counter
-            scrollCounter++;
+            // increment the currentIndex variable by 1 every 50 pixels of scroll distance
+            if (currentScrollPosition >= currentIndex * 22) {
+                currentIndex = Math.min(currentIndex + 1, 49);
+            } else if (currentScrollPosition <= currentIndex * 22) {
+                currentIndex = Math.max(currentIndex - 1, 0);
+            }
 
-            // Check if the scroll counter has reached 10
-            if (scrollCounter === 3) {
-                // Check if the user has scrolled down
-                if (event.scrollY > 0) {
-                    // Increment the current index of the photos array
-                    currentIndex++;
+            // Set the src attribute of the image element to the URL of the current photo
+            imageElement.src = photos[currentIndex];
+        });
 
-                    // Check if the current index is out of bounds
-                    if (currentIndex >= photos.length) {
-                        // Reset the current index to 0 if it's out of bounds
-                        currentIndex = 0;
-                    }
-                } else {
-                    // Decrement the current index of the photos array
-                    currentIndex--;
 
-                    // Check if the current index is out of bounds
-                    if (currentIndex < 0) {
-                        // Set the current index to the last element of the photos array if it's out of bounds
-                        currentIndex = photos.length - 1;
-                    }
-                }
+        function changeImagePosition() {
+            var imageElement = document.getElementById('image');
 
-                // Set the src attribute of the image element to the URL of the current photo
-                imageElement.src = photos[currentIndex];
-
-                // Reset the scroll counter
-                scrollCounter = 0;
+            if (window.scrollY > 1000) {
+                imageElement.style.position = 'absolute';
+                imageElement.style.top = '72rem';
+            } else {
+                imageElement.style.position = 'fixed';
+                imageElement.style.top = '10rem';
             }
         }
 
-        // Listen for the scroll event on the document
-        document.addEventListener("scroll", handleScroll);
+        // This will run the changeImagePosition function whenever the
+        // user scrolls the page
+        window.addEventListener('scroll', changeImagePosition);
     </script>
 </body></html>

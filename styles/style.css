@@ -316,7 +316,7 @@ video {
     border-radius: 20px;
 }
 
-/*
+
 .koktejl__images-wave-background {
     margin-top: -18vw;
     background: url(../images/Vector%203.svg);
@@ -324,7 +324,7 @@ video {
     background-position: cover;
 
 }
-*/
+
 .koktejl__images-wave-container {
     padding: 23rem 0vw 18rem 0vw;
     display: flex;
@@ -343,6 +343,7 @@ video {
     top: 10rem;
     width: 40%;
 }
+
 
 body::-webkit-scrollbar {
     width: 1em;
