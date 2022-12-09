@@ -27,7 +27,7 @@
 
 
         <nav class="desktop-nav">
-            <a href="javascript:setTimeout(()=>{window.location = 'index.html' },1000);" id="a">
+            <a href="javascript:setTimeout(()=>{window.location = 'index.html' },1000);">
                 <img src="images/logo.png" class="logo">
             </a>
 
@@ -207,8 +207,11 @@
         }, 5000);
     </script>
     <script>
-        document.getElementById('a').addEventListener('click', function() {
-            document.getElementById("r--out").style.display = "flex";
+        const el = document.querySelectorAll('a');
+        el.forEach(function(a) {
+            a.addEventListener("click", function() {
+                document.getElementById("r--out").style.display = "flex";
+            });
         });
     </script>
 </body></html>

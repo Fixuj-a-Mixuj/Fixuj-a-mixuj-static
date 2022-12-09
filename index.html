@@ -32,11 +32,11 @@
                 <img src="images/logo.png" class="logo">
             </a>
 
-            <a class="menu-button js-menu-button">
+            <span class="menu-button js-menu-button">
                 <div class="menu-icon">
                     <span></span><span></span><span></span>
                 </div>
-            </a>
+            </span>
         </nav>
 
         <div class="fullscreen-menu-container-l js-menu-container-l">
@@ -52,11 +52,11 @@
         </div>
 
         <div class="fullscreen-menu-container-r js-menu-container-r">
-            <a class="menu-button js-menu-close">
+            <span class="menu-button js-menu-close">
                 <div class="menu-icon is-active">
                     <span></span><span></span><span></span>
                 </div>
-            </a>
+            </span>
             <div class="fullscreen-menu-koktejl-container">
                 <img class="fullscreen-menu-koktejl" src="images/ikonky_bezpozadi/TEQUILA%20SUNRISE.png">
                 <div class="fullscreen-menu-koktejl-mesice-container">
@@ -93,7 +93,7 @@
         <div class="favoriti__list">
 
             <div class="your-element" data-tilt>
-                <a href="javascript:setTimeout(()=>{window.location = 'detail-cocktailu.html' },1000);" class="no-underline" id="a">
+                <a href="javascript:setTimeout(()=>{window.location = 'detail-cocktailu.html' },1000);" class="no-underline">
                     <figure class="nejnovejsi__list-item">
                         <img src="images/ikonky_bezpozadi/BLUE%20LAGOON.png" alt="blue lagoon" class="karta-oblibene__item-img">
                         <figcaption class="karta-oblibene__item-container karta-oblibene__item-container-vlnata">
@@ -260,11 +260,16 @@
     <script src="styles/script-menu.js"></script>
     <script src="styles/script-carousel.js"></script>
     <script>
-        document.getElementById('a').addEventListener('click', function() {
+        document.querySelectorAll('a').addEventListener('click', function() {
             document.getElementById("r--out").style.display = "flex";
         });
-
     </script>
-</body>
-
-</html>
+    <script>
+        const el = document.querySelectorAll('a');
+        el.forEach(function(a) {
+            a.addEventListener("click", function() {
+                document.getElementById("r--out").style.display = "flex";
+            });
+        });
+    </script>
+</body></html>
