@@ -149,9 +149,9 @@
             const currentScrollPosition = window.scrollY;
 
             // increment the currentIndex variable by 1 every 50 pixels of scroll distance
-            if (currentScrollPosition >= currentIndex * 22) {
+            if (currentScrollPosition >= currentIndex * 21) {
                 currentIndex = Math.min(currentIndex + 1, 49);
-            } else if (currentScrollPosition <= currentIndex * 22) {
+            } else if (currentScrollPosition <= currentIndex * 21) {
                 currentIndex = Math.max(currentIndex - 1, 0);
             }
 
