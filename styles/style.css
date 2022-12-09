@@ -343,3 +343,23 @@ video {
     top: 10rem;
     width: 40%;
 }
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    border-radius: 100px;
+    background-color: darkgrey;
+    background-clip: content-box;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90.14deg, #6E6BFF 0.97%, #8C4EDF 50.43%, #9266F0 99.88%), #000000;
+    -webkit-background-clip: content-box;
+}
