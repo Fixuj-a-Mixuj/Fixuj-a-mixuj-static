@@ -31,11 +31,11 @@
                 <img src="images/logo.png" class="logo">
             </a>
 
-            <a class="menu-button js-menu-button">
+            <span class="menu-button js-menu-button">
                 <div class="menu-icon">
                     <span></span><span></span><span></span>
                 </div>
-            </a>
+            </span>
         </nav>
 
         <div class="fullscreen-menu-container-l js-menu-container-l">
@@ -51,11 +51,11 @@
         </div>
 
         <div class="fullscreen-menu-container-r js-menu-container-r">
-            <a class="menu-button js-menu-close">
+            <span class="menu-button js-menu-close">
                 <div class="menu-icon is-active">
                     <span></span><span></span><span></span>
                 </div>
-            </a>
+            </span>
             <div class="fullscreen-menu-koktejl-container">
                 <img class="fullscreen-menu-koktejl" src="images/ikonky_bezpozadi/TEQUILA%20SUNRISE.png">
                 <div class="fullscreen-menu-koktejl-mesice-container">
@@ -177,12 +177,12 @@
         function changeImagePosition() {
             var imageElement = document.getElementById('image');
 
-            if (window.scrollY > 1000) {
+            if (window.scrollY > 950) {
                 imageElement.style.position = 'absolute';
-                imageElement.style.top = '72rem';
+                imageElement.style.top = '60vw';
             } else {
                 imageElement.style.position = 'fixed';
-                imageElement.style.top = '10rem';
+                imageElement.style.top = '10vw';
             }
         }
 

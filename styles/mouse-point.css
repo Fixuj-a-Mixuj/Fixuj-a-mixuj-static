@@ -1,9 +1,9 @@
 #mouse-scroll {
-    position: absolute;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
-    left: 50%;
-    top: 94%;
-    -webkit-transform: translateX(-50%);
     z-index: 2;
 }
 
@@ -17,7 +17,7 @@
     transform: rotate(45deg);
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    margin: 0 0 3px 5px;
+    margin: 0 0 3px 0px;
 }
 
 #mouse-scroll .mouse {
